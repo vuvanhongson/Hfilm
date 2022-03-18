@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:layout_marginBottom="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Tài khoản"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#25433F3F"/>
+
+    <LinearLayout
+        android:id="@+id/LayoutTT"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+            <ImageView
+                android:id="@+id/imgHinhSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hinh12"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTenTK"
+                android:text="Tên tài khoản"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEmail"
+                android:text="Gmail"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:id="@+id/tvID"
+                android:textColor="@color/cam3"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ViewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#25433F3F"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/app_name"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/hinh10"/>
+
+        <TextView
+            android:id="@+id/tvCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:text="Đánh giá  mức độ hài lòng của bạn"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_marginRight="25dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.hsalf.smileyrating.SmileyRating
+            android:id="@+id/smile_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="visible"
+            android:id="@+id/btnDangxuat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_cam_radius"
+            android:text="Đăng xuất"
+            android:textAllCaps="false"
+            android:textColor="@color/trang"
+            android:textSize="20dp"
+
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/LayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_custom_buttom_radius"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textColor="@color/trang"
+            android:textSize="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_custom_buttom_border"
+            android:text="Chưa có tài khoản?"
+            android:textAllCaps="false"
+            android:textColor="@color/camHfilm"
+            android:textSize="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

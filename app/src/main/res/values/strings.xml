@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hfilm</string>
+    <string name="link_dangky"><u>ĐĂNG KÝ</u></string>
+    <string name="chuadienHoTen">Bạn chưa điền Họ Tên</string>
+    <string name="Hoten">Họ Tên</string>
+    <string name="chuadienEmail">Bạn chưa điền Email</string>
+    <string name="Email">Email</string>
+    <string name="chuadienPass">Bạn chưa tạo mật khẩu</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="chuaxacnhanMatkhau">Bạn chưa xác nhận mật khẩu</string>
+    <string name="xacnhanmatkhau">Xác nhận mật khẩu</string>
+    <string name="dangky">Đăng ký</string>
+    <string name="ScriptDangky">Bằng việc chọn vào nút Đăng ký, bạn đã đồng ý với Điều khoản sử dung và Quy định bảo mật của Hfilm</string>
+    <string name="facebook_app_id">486514146342573</string> <string name="fb_login_protocol_scheme">fb486514146342573</string>
+
+</resources>

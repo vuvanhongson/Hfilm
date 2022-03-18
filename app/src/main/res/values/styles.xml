@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/camHfilm</item>
+        <item name="colorPrimary">@color/camHfilm</item>
+        <item name="colorPrimaryVariant">@color/camHfilm</item>
+        <item name="colorOnPrimary">@color/trang</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/camHfilm</item>
+        <item name="colorPrimary">@color/camHfilm</item>
+        <item name="colorPrimaryVariant">@color/camHfilm</item>
+        <item name="colorOnPrimary">@color/trang</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#65FFFFFF</item>
+    </style>
+
+    <style name="HighLightTextTheme">
+        <item name="colorControlNormal">#00FFFFFF</item>
+        <item name="colorControlActivated">#00FFFFFF</item>
+        <item name="colorControlHighlight">#79FFFFFF</item>
+    </style>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".forgotpass.ForgotPassActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Đổi mật khẩu"
+                android:fontFamily="@font/opensans_light"
+                android:textColor="@color/trang"
+                android:textSize="27sp"
+                android:textStyle=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="#65FFFFFF" />
+
+
+            <!--            ============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hãy nhập email mà bạn đã dùng để tại tài khoản."
+                        android:textColor="@color/trang"
+                        android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                        android:textSize="18dp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Email"
+                        android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="#65FFFFFF"
+                        android:textColor="@color/trang"
+                        android:textSize="18dp"
+                        android:theme="@style/MyEditTextTheme"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnForgot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_cam_radius"
+                        android:text="Gửi link cho tôi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/trang"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            ============================================-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="#65FFFFFF" />
+
+            <ImageView
+                android:id="@+id/btnDong"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/btnclose"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

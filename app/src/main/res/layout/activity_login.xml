@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".login.Login">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Đăng nhập"
+                android:fontFamily="@font/opensans_light"
+                android:textColor="@color/trang"
+                android:textSize="27sp"
+                android:textStyle=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="#65FFFFFF" />
+
+
+            <!--            ============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <EditText
+                        android:id="@+id/tvEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/trang"
+                        android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                        android:textColorHint="#65FFFFFF"
+                        android:textSize="18dp"
+                        android:theme="@style/MyEditTextTheme"/>
+
+
+
+                    <EditText
+                        android:id="@+id/tvPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:drawablePadding="10dp"
+                        android:hint="Mật khẩu"
+                        android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                        android:inputType="textPassword"
+                        android:textColorHint="#65FFFFFF"
+                        android:textColor="@color/trang"
+                        android:textSize="18dp"
+                        android:theme="@style/MyEditTextTheme"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_cam_radius"
+                        android:text="Đăng nhập"
+                        android:textAllCaps="false"
+                        android:textColor="@color/trang"
+                        android:textSize="20dp"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnquenmk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_trang_radius"
+                        android:text="Quên mặt khẩu?"
+                        android:textAllCaps="false"
+                        android:textColor="@color/trang"
+                        android:textSize="20dp"/>
+
+<!--                    <androidx.appcompat.widget.AppCompatButton-->
+<!--                        android:id="@+id/btnLoginFace"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:background="@drawable/bg_xanhlam_radius"-->
+<!--                        android:drawableLeft="@drawable/ic_baseline_flash_on_24"-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:text="Đăng nhập với Facebook"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="@color/trang"-->
+<!--                        android:textSize="20dp"/>-->
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:textSize="20dp"
+
+                        android:text="Đăng nhập với Facebook"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="0dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            ============================================-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="#65FFFFFF" />
+
+            <ImageView
+                android:id="@+id/btnclose"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/btnclose"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/trang"
+                    android:text="Bạn chưa có tài khoản?"/>
+                <TextView
+                    android:id="@+id/tvDangKy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cam1"
+                    android:text="@string/link_dangky" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

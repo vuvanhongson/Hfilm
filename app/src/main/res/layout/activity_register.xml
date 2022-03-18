@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@drawable/bg"
+    tools:context=".register.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/dangky"
+                android:fontFamily="@font/opensans_light"
+                android:textColor="@color/trang"
+                android:textSize="27sp"
+                android:textStyle=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="#65FFFFFF" />
+
+
+            <!--            ============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvchuadienhoten"
+                            android:layout_marginBottom="-15dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chuadienHoTen"
+                            android:textColor="@color/cam4"
+                            android:visibility="gone
+"/>
+                        <EditText
+                            android:id="@+id/editHoten"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/Hoten"
+                            android:inputType="text"
+                            android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                            android:textColor="@color/trang"
+                            android:textColorHint="#74FFFFFF"
+                            android:textSize="18dp"
+                            android:theme="@style/MyEditTextTheme"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvchuadienemail"
+                            android:layout_marginBottom="-15dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chuadienEmail"
+                            android:textColor="@color/cam4"
+                            android:visibility="gone"/>
+                        <EditText
+                            android:id="@+id/editEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/Email"
+                            android:inputType="textEmailAddress"
+                            android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                            android:textColorHint="#74FFFFFF"
+                            android:textColor="@color/trang"
+                            android:textSize="18dp"
+                            android:theme="@style/MyEditTextTheme"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvchuadienmakhau"
+                            android:layout_marginBottom="-15dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chuadienPass"
+                            android:textColor="@color/cam4"
+                            android:visibility="gone"/>
+                        <EditText
+                            android:id="@+id/editMaKhau"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/matkhau"
+                            android:inputType="textPassword"
+                            android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                            android:textColorHint="#74FFFFFF"
+                            android:textColor="@color/trang"
+                            android:textSize="18dp"
+                            android:theme="@style/MyEditTextTheme"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvchuaxacnhanmatkhau"
+                            android:layout_marginBottom="-15dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chuaxacnhanMatkhau"
+                            android:textColor="@color/cam4"
+                            android:visibility="gone"/>
+                        <EditText
+                            android:id="@+id/editreMatKhau"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:drawablePadding="10dp"
+                            android:hint="@string/xacnhanmatkhau"
+                            android:inputType="textPassword"
+                            android:fontFamily="@font/opensans_variablefont_wdth_wght"
+                            android:textColorHint="#74FFFFFF"
+                            android:textColor="@color/trang"
+                            android:textSize="18dp"
+                            android:theme="@style/MyEditTextTheme"/>
+
+                    </LinearLayout>
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnDangky"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_cam_radius"
+                        android:text="@string/dangky"
+                        android:textAllCaps="false"
+                        android:textColor="@color/trang"
+                        android:textSize="20dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            ============================================-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#65FFFFFF" />
+
+            <ImageView
+                android:id="@+id/btnexit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/btnclose"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:paddingBottom="20dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+                <TextView
+                    android:id="@+id/tvScriptDangky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/trang"
+                    android:gravity="center"
+                    android:text="@string/ScriptDangky"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

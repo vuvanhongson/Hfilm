@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp">
+
+
+    <ImageView
+        android:id="@+id/imageFilm"
+        android:layout_width="115dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/loading_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:text="TextView"
+        android:textColor="@color/camHfilm"
+        app:layout_constraintStart_toEndOf="@+id/imageFilm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="10dp"
+        android:text="TextView"
+        android:textColor="@color/trang"
+        app:layout_constraintStart_toEndOf="@+id/imageFilm"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="@color/cam4"
+        app:layout_constraintStart_toEndOf="@+id/imageFilm"
+        app:layout_constraintTop_toBottomOf="@+id/tvTen" />
+
+    <TextView
+        android:id="@+id/tvScript"
+        android:layout_width="230dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:paddingRight="10dp"
+        android:text="TextView"
+        android:ellipsize="end"
+        android:singleLine="false"
+        android:justificationMode="inter_word"
+        android:textColor="@color/trang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageFilm"
+        app:layout_constraintTop_toBottomOf="@+id/tvView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/imageFilm"
+        app:layout_constraintTop_toBottomOf="@+id/tvScript">
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_like_orange2x" />
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã thích"
+            android:textColor="@color/cam1"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnXemFilm"
+        android:layout_width="91dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/bg_btn_cam_xemfilm"
+        android:text="Xem phim"
+        android:textAllCaps="false"
+        android:textColor="@color/trang"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvScript" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#4DFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

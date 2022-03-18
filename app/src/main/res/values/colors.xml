@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorAccent">#03DAC5</color>
+    <color name="camHfilm">#fd6003</color>
+    <color name="cam1">#FF4500</color>
+    <color name="cam2">#FF6347</color>
+    <color name="cam3">#FF8C00</color>
+    <color name="cam4">#FFA500</color>
+
+
+    <color name="xanh1">#00FA9A</color>
+    <color name="xanh2">#00FF7F</color>
+    <color name="xanh3">#3CB371</color>
+    <color name="xanh4">#2E8B57</color>
+    <color name="xanh5">#66F5B0</color>
+
+    <color name="trang">#ffffff</color>
+
+    <color name="lam1">#AFEEEE</color>
+    <color name="lam2">#7FFFD4</color>
+    <color name="lam3">#40E0D0</color>
+    <color name="lam4">#48D1CC</color>
+    <color name="lam5">#00CED1</color>
+    <color name="lam7">#4682B4</color>
+    <color name="lamfacebook">#3b5999</color>
+
+
+    <color name="do1">#FA8072</color>
+    <color name="do2">#DC143C</color>
+    <color name="do3">#FF0000</color>
+    <color name="do4">#B22222</color>
+    <color name="do5">#8B0000</color>
+    <color name="do6">#b6003b</color>
+    <color name="do7">#ff3203</color>
+    <color name="do8">#e82565</color>
+
+</resources>
